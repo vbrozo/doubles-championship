@@ -4,6 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/doubles-championship/',
   plugins: [
     react(),
     VitePWA({
@@ -16,7 +17,8 @@ export default defineConfig({
         theme_color: '#1b4332',
         background_color: '#1b4332',
         display: 'standalone',
-        start_url: '/',
+        start_url: '/doubles-championship/',
+        scope: '/doubles-championship/',
         icons: [
           {
             src: 'icon-192.png',
